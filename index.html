@@ -1,75 +1,140 @@
-export default function Portfolio() {
-              />
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-cyan-400">
-                  App Quản Lý Công Việc
-                </h3>
+  <title>Portfolio Võ Trung Nguyên</title>
 
-                <p className="text-slate-400 mt-3 text-lg">
-                  Android Studio + SQLite
-                </p>
+  <link rel="stylesheet" href="style.css">
 
-                <p className="mt-5 text-slate-300 leading-8">
-                  Ứng dụng quản lý công việc hỗ trợ đăng nhập, đăng ký và lưu
-                  trữ ghi chú cá nhân với giao diện thân thiện.
-                </p>
-              </div>
-            </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-            {/* Project 2 */}
-            <div className="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition duration-500 shadow-2xl hover:-translate-y-3">
-              <img
-                src="https://placehold.co/600x400/111827/3b82f6/png?text=Travel+Website"
-                alt="Project"
-                className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
-              />
+<body>
 
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-cyan-400">
-                  Website Tour Du Lịch
-                </h3>
+  <!-- Background Glow -->
+  <div class="glow glow1"></div>
+  <div class="glow glow2"></div>
 
-                <p className="text-slate-400 mt-3 text-lg">
-                  HTML/CSS + SQL Server
-                </p>
+  <!-- Header -->
+  <header>
 
-                <p className="mt-5 text-slate-300 leading-8">
-                  Website quản lý tour du lịch miền Tây với giao diện hiện đại
-                  và hệ thống quản lý khách hàng.
-                </p>
-              </div>
-            </div>
+    <div class="profile">
 
-            {/* Project 3 */}
-            <div className="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition duration-500 shadow-2xl hover:-translate-y-3">
-              <img
-                src="https://placehold.co/600x400/0f172a/38bdf8/png?text=AI+Emotion"
-                alt="Project"
-                className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
-              />
+      <img src="nguyen.jpg" alt="avatar">
 
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-cyan-400">
-                  AI Nhận Diện Cảm Xúc
-                </h3>
+      <h1>Võ Trung Nguyên</h1>
 
-                <p className="text-slate-400 mt-3 text-lg">Python + AI</p>
+      <p>
+        CNTT Student • Android Developer • AI Enthusiast
+      </p>
 
-                <p className="mt-5 text-slate-300 leading-8">
-                  Hệ thống nhận diện cảm xúc khuôn mặt bằng AI sử dụng Python
-                  và Machine Learning.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a href="#projects" class="btn">
+        Xem Dự Án
+      </a>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-800 py-10 text-center text-slate-500 text-lg">
-        © 2026 Võ Trung Nguyên • Modern Portfolio Website
-      </footer>
     </div>
-  );
-}
+
+  </header>
+
+  <!-- About -->
+  <section class="section">
+
+    <h2>Giới Thiệu</h2>
+
+    <p>
+      Sinh viên Công Nghệ Thông Tin đam mê lập trình Android,
+      AI và phát triển website hiện đại. Luôn học hỏi công nghệ mới
+      để tạo ra những sản phẩm thực tế và sáng tạo.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+
+    <h2>Kỹ Năng</h2>
+
+    <div class="skills">
+
+      <div class="skill">Java</div>
+
+      <div class="skill">Android Studio</div>
+
+      <div class="skill">SQL Server</div>
+
+      <div class="skill">Python</div>
+
+      <div class="skill">AI Tools</div>
+
+      <div class="skill">HTML / CSS</div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+
+    <h2>Dự Án</h2>
+
+    <div class="projects">
+
+      <div class="card">
+
+        <h3>App Quản Lý Công Việc</h3>
+
+        <span>Android Studio + SQLite</span>
+
+        <p>
+          Ứng dụng quản lý công việc hỗ trợ đăng nhập,
+          đăng ký và ghi chú cá nhân.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Website Tour Du Lịch</h3>
+
+        <span>HTML/CSS + SQL Server</span>
+
+        <p>
+          Website quản lý tour du lịch miền Tây
+          với giao diện hiện đại.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>AI Nhận Diện Cảm Xúc</h3>
+
+        <span>Python + AI</span>
+
+        <p>
+          Hệ thống AI nhận diện cảm xúc khuôn mặt
+          bằng Machine Learning.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+    <p>
+      © 2026 Võ Trung Nguyên Portfolio
+    </p>
+
+  </footer>
+
+</body>
+</html>
+```
