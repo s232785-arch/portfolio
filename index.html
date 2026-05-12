@@ -1,64 +1,75 @@
-```html
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Võ Trung Nguyên</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+export default function Portfolio() {
+              />
 
-  <div class="container">
+              <div className="p-8">
+                <h3 className="text-3xl font-bold text-cyan-400">
+                  App Quản Lý Công Việc
+                </h3>
 
-    <div class="profile">
-      <img src="profile.png" alt="avatar">
-      <h1>Võ Trung Nguyên</h1>
-      <p>CNTT Student | Android Developer | AI Enthusiast</p>
+                <p className="text-slate-400 mt-3 text-lg">
+                  Android Studio + SQLite
+                </p>
+
+                <p className="mt-5 text-slate-300 leading-8">
+                  Ứng dụng quản lý công việc hỗ trợ đăng nhập, đăng ký và lưu
+                  trữ ghi chú cá nhân với giao diện thân thiện.
+                </p>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition duration-500 shadow-2xl hover:-translate-y-3">
+              <img
+                src="https://placehold.co/600x400/111827/3b82f6/png?text=Travel+Website"
+                alt="Project"
+                className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+              />
+
+              <div className="p-8">
+                <h3 className="text-3xl font-bold text-cyan-400">
+                  Website Tour Du Lịch
+                </h3>
+
+                <p className="text-slate-400 mt-3 text-lg">
+                  HTML/CSS + SQL Server
+                </p>
+
+                <p className="mt-5 text-slate-300 leading-8">
+                  Website quản lý tour du lịch miền Tây với giao diện hiện đại
+                  và hệ thống quản lý khách hàng.
+                </p>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition duration-500 shadow-2xl hover:-translate-y-3">
+              <img
+                src="https://placehold.co/600x400/0f172a/38bdf8/png?text=AI+Emotion"
+                alt="Project"
+                className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+              />
+
+              <div className="p-8">
+                <h3 className="text-3xl font-bold text-cyan-400">
+                  AI Nhận Diện Cảm Xúc
+                </h3>
+
+                <p className="text-slate-400 mt-3 text-lg">Python + AI</p>
+
+                <p className="mt-5 text-slate-300 leading-8">
+                  Hệ thống nhận diện cảm xúc khuôn mặt bằng AI sử dụng Python
+                  và Machine Learning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-800 py-10 text-center text-slate-500 text-lg">
+        © 2026 Võ Trung Nguyên • Modern Portfolio Website
+      </footer>
     </div>
-
-    <div class="section">
-      <h2>Giới thiệu</h2>
-      <p>
-        Sinh viên CNTT yêu thích Android, AI và phát triển ứng dụng hiện đại.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Kỹ năng</h2>
-
-      <div class="skills">
-        <span>Java</span>
-        <span>Android Studio</span>
-        <span>SQL Server</span>
-        <span>Python</span>
-        <span>AI Tools</span>
-        <span>HTML/CSS</span>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Dự án</h2>
-
-      <div class="project">
-        <h3>App Quản Lý Công Việc</h3>
-        <p>Android Studio + SQLite</p>
-      </div>
-
-      <div class="project">
-        <h3>Website Tour Du Lịch Miền Tây</h3>
-        <p>HTML/CSS + SQL Server</p>
-      </div>
-
-      <div class="project">
-        <h3>AI Nhận Diện Cảm Xúc</h3>
-        <p>Python + AI</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</body>
-</html>
-```
+  );
+}
